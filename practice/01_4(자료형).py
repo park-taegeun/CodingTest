@@ -210,6 +210,6 @@ print(8, end=" ") # 개행x
 answer = 7
 print("정답은 " + str(answer) + "입니다.")
 
-# f스트링
+## f스트링
 answer = 7
 print(f"정답은 {answer}입니다.") 
