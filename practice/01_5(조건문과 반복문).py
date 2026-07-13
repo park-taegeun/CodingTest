@@ -113,3 +113,25 @@ while True:
     print(f"현재 i값: {i}")
     if i == 5: break
     i+=1
+
+scores = [90, 85, 77, 65, 97]
+
+for i in range(5): # 0~4
+    if scores[i] >= 80:
+        print(f"{i+1} 번 학생은 합격입니다.")
+
+scores = [90, 85, 77, 65, 97]
+cheating_student_list = {2, 4}
+
+for i in range(5):
+    if i+1 in cheating_student_list: continue
+    if scores[i] >= 80:
+        print(f"{i+1}번 학생은 합격입니다.")
+
+
+### 중첩된 반복문
+### 구구단 예제
+for i in range(2, 10): # 2~9
+    for j in range(1, 10): # 1~9
+        print(f"{i} X {j} = {i*j}")
+    print()
