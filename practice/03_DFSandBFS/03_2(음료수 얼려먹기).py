@@ -58,3 +58,12 @@ for i in range(n):
             count += 1 
 
 print(f"만들 수 있는 아이스크림 개수: {count}")
+
+# 내가 생각한 bfs 함수의 역할 flow
+# 1. 큐 생성 -> 시작점 append -> visited True
+# 2. 큐 빌 때까지 반복
+# - popleft -> 이웃 판별 로직 -> 조건 통과한 이웃: append + visited True
+
+# 이웃 판별 로직
+# 인접 리스트: for i in graph[v]
+# 격자: for k in range(4)
